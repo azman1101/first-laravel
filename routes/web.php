@@ -13,7 +13,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', 'UserController@home')->name('home');
+//Route::get('/', 'UserController@home')->name('home');
 Route::get('/users', 'UserController@showUsers')->name('showusers');
 Route::get('/signup', 'UserController@CreateUser');
 Route::post('/signup', 'UserController@saveUser')->name('createuser');
@@ -23,4 +23,4 @@ Route::post('/login', 'AuthController@signin')->name('signin');
 
 Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/', 'HomeController@index')->name('home');

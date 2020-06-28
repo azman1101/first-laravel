@@ -14,7 +14,22 @@
                         </div>
                     @endif
 
-                    You are logged in!
+                    <p>You are logged in!</p>
+
+                    <dl class="row">
+                        <dt class="col-sm-3">Name</dt>
+                        <dd class="col-sm-9">{{$user->name}}</dd>
+
+                        <dt class="col-sm-3">Email</dt>
+                        <dd class="col-sm-9">{{$user->email}}</dd>
+
+                        <dt class="col-sm-3">Create on</dt>
+                        <dd class="col-sm-9">{{$user->created_at}}</dd>
+
+                        <dt class="col-sm-3">Last update</dt>
+                        <dd class="col-sm-9">{{$user->updated_at}}</dd>
+                    </dl>
+                    
                 </div>
             </div>
         </div>

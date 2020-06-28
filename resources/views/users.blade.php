@@ -9,6 +9,8 @@
                 <td>ID</td>
                 <td>Name</td>
                 <td>Email</td>
+                <td>Create on</td>
+                <td>Last update</td>
             </tr>
         </thead>
 
@@ -18,6 +20,8 @@
                     <td>{{$user->id}} </td>
                     <td>{{$user->name}}</td>
                     <td>{{$user->email}}</td>
+                    <td>{{$user->created_at}}</td>
+                    <td>{{$user->updated_at}}</td>
                 </tr>
             </tbody>
         @endforeach
